@@ -15,9 +15,9 @@
 		689D4328AB6CB816D6DE7DB749471721 /* Pods-NSUtils_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED86A167FC7BC87620361EC6925D61E5 /* Pods-NSUtils_Example-dummy.m */; };
 		8B5FF902D25D069B701621AB5551A54F /* NSUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34348FBE67122AEFC5023ED2F8D82D6E /* NSUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A520190B1E40F59D0022BFDE /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520190A1E40F59D0022BFDE /* Alerts.swift */; };
+		A520190D1E40F7DC0022BFDE /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520190C1E40F7DC0022BFDE /* UIImageView.swift */; };
 		BC82081F94BE2C4F63809C9C61CB3E77 /* Pods-NSUtils_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 195228C210567DA78D55E3FF4CCFC0CD /* Pods-NSUtils_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5CC47917F2E32404789CD33D2E088C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		F9347FE6EA05DBD466DD9C1766CCC582 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24166A70AA6B2327473913107AFF01C5 /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 		195228C210567DA78D55E3FF4CCFC0CD /* Pods-NSUtils_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NSUtils_Tests-umbrella.h"; sourceTree = "<group>"; };
 		1979A1A7CDD6A3C5C3C6088BA92609D7 /* NSUtils.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NSUtils.xcconfig; sourceTree = "<group>"; };
 		22FCAFB1707046C3CA0C50BFDDC6D849 /* Pods-NSUtils_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NSUtils_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		24166A70AA6B2327473913107AFF01C5 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		31965F13E1896B1368F5F2F7CB2285E3 /* Pods_NSUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34348FBE67122AEFC5023ED2F8D82D6E /* NSUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSUtils-umbrella.h"; sourceTree = "<group>"; };
 		35C604AC802646C8ED24D16A84D07485 /* Pods-NSUtils_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NSUtils_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D6E6D5739005BA4AD28F9F879C90D6B /* Pods-NSUtils_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NSUtils_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A520190A1E40F59D0022BFDE /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		A520190C1E40F7DC0022BFDE /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		B97D7747D4A092016F31C87B927D2F8F /* Pods-NSUtils_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NSUtils_Example.modulemap"; sourceTree = "<group>"; };
 		C1DDD4AF451610417219EBB92D8B3F9C /* Pods-NSUtils_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NSUtils_Example-resources.sh"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -219,8 +219,8 @@
 		C73B51C7B90ADEFF579B549E0F3C766B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				24166A70AA6B2327473913107AFF01C5 /* ReplaceMe.swift */,
 				A520190A1E40F59D0022BFDE /* Alerts.swift */,
+				A520190C1E40F7DC0022BFDE /* UIImageView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -348,9 +348,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A520190D1E40F7DC0022BFDE /* UIImageView.swift in Sources */,
 				388658614479C0A6DDC40DB333B255B9 /* NSUtils-dummy.m in Sources */,
 				A520190B1E40F59D0022BFDE /* Alerts.swift in Sources */,
-				F9347FE6EA05DBD466DD9C1766CCC582 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
