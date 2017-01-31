@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import NSUtils
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, Presentable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,5 +21,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func presentSystemAlert(_ sender: UIButton) {
+        self.showSystemAlert(title: "Test", message: "Alert")
+    }
 }
 
