@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'NSUtils'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of NSUtils.'
+  s.summary          = 'A handy set of functions and extensions for your project.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,15 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A handy set of functions and extensions for your project. A project full of helper functions and extensions to give you a boost when starting a new project.
                        DESC
 
-  s.homepage         = 'https://github.com/jackcolley/NSUtils'
+  s.homepage         = 'https://github.com/netsells/NSUtils'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jackcolley' => 'jack.colley@netsells.co.uk' }
-  s.source           = { :git => 'https://github.com/jackcolley/NSUtils.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/netsells/NSUtils.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/netsells'
 
   s.ios.deployment_target = '8.0'
 
