@@ -33,5 +33,23 @@ extension UIImageView {
         guard let url = URL(string: link) else { return }
         downloadedFrom(url: url, contentMode: mode)
     }
+}
 
+class RoundedImageView: UIImageView {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        customInit()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        customInit()
+    }
+    
+    fileprivate func customInit() {
+        self.layer.cornerRadius = self.frame.width / 2
+        self.layer.masksToBounds = true
+    }
 }
