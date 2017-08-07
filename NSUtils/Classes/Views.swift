@@ -16,8 +16,8 @@ extension UIView {
      
      - parameter angle: angle in degrees
      */
-    public func rotate(angle angle: CGFloat) {
-        let radians = angle / 180.0 * CGFloat(M_PI)
+    public func rotate(angle: CGFloat) {
+        let radians = angle / 180.0 * .pi
         let rotation = self.transform.rotated(by: radians);
         self.transform = rotation
     }
