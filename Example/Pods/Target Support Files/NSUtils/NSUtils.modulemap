@@ -1,6 +1,0 @@
-framework module NSUtils {
-  umbrella header "NSUtils-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,9 +1,5 @@
 # NSUtils
 
-[![CI Status](https://travis-ci.org/netsells/NSUtils.svg?branch=master)](https://travis-ci.org/netsells/NSUtils)
-[![Version](https://img.shields.io/cocoapods/v/NSUtils.svg?style=flat)](http://cocoapods.org/pods/NSUtils)
-[![License](https://img.shields.io/cocoapods/l/NSUtils.svg?style=flat)](http://cocoapods.org/pods/NSUtils)
-[![Platform](https://img.shields.io/cocoapods/p/NSUtils.svg?style=flat)](http://cocoapods.org/pods/NSUtils)
 
 ## Example
 

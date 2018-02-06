@@ -1,0 +1,24 @@
+//
+//  Presentable+Extensions.swift
+//  NSUtils
+//
+//  Created by Jack Colley on 01/02/2018.
+//  Copyright © 2018 Netsells. All rights reserved.
+//
+
+import Foundation
+
+public protocol Presentable {}
+
+extension Presentable {
+    public func showSystemAlert(title: String, message: String, defaultActionTitle: String = "OK") {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+
+        let okAction = UIAlertAction(title: defaultActionTitle, style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
+        }
+
+        alertController.addAction(okAction)
+
+        UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
+    }
+}
