@@ -31,6 +31,7 @@ A handy set of functions and extensions for your project. A project full of help
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'NSUtils/Classes/**/*'
+  s.swift_version = '4.0'
   
   # s.resource_bundles = {
   #   'NSUtils' => ['NSUtils/Assets/*.png']

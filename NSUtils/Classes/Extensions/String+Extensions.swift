@@ -11,7 +11,10 @@ import Foundation
 extension String {
     public func trunc(length: Int, trailing: String? = "") -> String {
         if self.count > length {
-            return self.substring(to: self.index(self.startIndex, offsetBy: length)) + (trailing ?? "")
+            let start = self.index(self.startIndex, offsetBy: 0)
+            let end = self.index(self.startIndex, offsetBy: length)
+            let range = start..<end
+            return "\(String(self[range]))\(trailing ?? "")"
         } else {
             return self
         }
