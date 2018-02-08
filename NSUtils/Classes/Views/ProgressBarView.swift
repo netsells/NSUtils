@@ -11,9 +11,9 @@ import UIKit
 
 open class ProgressBarView: UIView {
 
-    @IBInspectable var startColour: UIColor = UIColor.white
-    @IBInspectable var endColour: UIColor = UIColor.blue
-    @IBInspectable var completionPercentage: CGFloat = 0.0
+    @IBInspectable public var startColour: UIColor = UIColor.white
+    @IBInspectable public var endColour: UIColor = UIColor.blue
+    @IBInspectable public var completionPercentage: CGFloat = 0.0
 
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
