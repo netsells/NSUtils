@@ -10,7 +10,7 @@ import Foundation
 
 public protocol Presentable {}
 
-extension Presentable {
+extension UIViewController {
     public func showSystemAlert(title: String, message: String, defaultActionTitle: String = "OK") {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
 
@@ -19,6 +19,6 @@ extension Presentable {
 
         alertController.addAction(okAction)
 
-        UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
+        self.present(alertController, animated: true, completion: nil)
     }
 }
