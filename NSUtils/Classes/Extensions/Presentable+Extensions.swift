@@ -12,9 +12,9 @@ public protocol Presentable {}
 
 extension UIViewController {
     public func showSystemAlert(title: String, message: String, defaultActionTitle: String = "OK") {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
 
-        let okAction = UIAlertAction(title: defaultActionTitle, style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
+        let okAction = UIAlertAction(title: defaultActionTitle, style: UIAlertAction.Style.default) { (result : UIAlertAction) -> Void in
         }
 
         alertController.addAction(okAction)

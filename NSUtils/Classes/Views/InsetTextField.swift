@@ -16,14 +16,14 @@ import UIKit
     @IBInspectable var bottom: CGFloat = 0
 
     override open func textRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, UIEdgeInsets(top: top, left: left, bottom: bottom, right: right))
+        return bounds.inset(by: UIEdgeInsets(top: top, left: left, bottom: bottom, right: right))
     }
 
     override open func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, UIEdgeInsets(top: top, left: left, bottom: bottom, right: right))
+        return bounds.inset(by: UIEdgeInsets(top: top, left: left, bottom: bottom, right: right))
     }
 
     override open func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, UIEdgeInsets(top: top, left: left, bottom: bottom, right: right))
+        return bounds.inset(by: UIEdgeInsets(top: top, left: left, bottom: bottom, right: right))
     }
 }
