@@ -21,6 +21,7 @@
 		A517786C20230604002498B3 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A517786B20230604002498B3 /* UIImageView+Extensions.swift */; };
 		A517786E2023061F002498B3 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A517786D2023061F002498B3 /* UIView+Extensions.swift */; };
 		A517787020230645002498B3 /* NSUtilsDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A517786F20230645002498B3 /* NSUtilsDateFormatter.swift */; };
+		FA4B43522203089600D19542 /* ContentObservableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B43512203089600D19542 /* ContentObservableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A517786B20230604002498B3 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		A517786D2023061F002498B3 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		A517786F20230645002498B3 /* NSUtilsDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSUtilsDateFormatter.swift; sourceTree = "<group>"; };
+		FA4B43512203089600D19542 /* ContentObservableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentObservableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		FA4B43502203085300D19542 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA4B43512203089600D19542 /* ContentObservableTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				A517787020230645002498B3 /* NSUtilsDateFormatter.swift in Sources */,
 				A517786120230528002498B3 /* RoundedImageView.swift in Sources */,
 				A517786E2023061F002498B3 /* UIView+Extensions.swift in Sources */,
+				FA4B43522203089600D19542 /* ContentObservableTableViewController.swift in Sources */,
 				A517786420230564002498B3 /* Array+Extensions.swift in Sources */,
 				A517786C20230604002498B3 /* UIImageView+Extensions.swift in Sources */,
 				A517785B2023044C002498B3 /* InsetTextField.swift in Sources */,
