@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NSUtils'
-  s.version          = '0.2.3'
+  s.version          = '0.2.4'
   s.summary          = 'A handy set of functions and extensions for your project.'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ A handy set of functions and extensions for your project. A project full of help
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'NSUtils/Classes/**/*'
-  s.swift_version = '4.0'
+  s.swift_version = '4.2'
   
   # s.resource_bundles = {
   #   'NSUtils' => ['NSUtils/Assets/*.png']
