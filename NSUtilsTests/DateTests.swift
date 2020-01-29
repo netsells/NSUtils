@@ -14,8 +14,8 @@ class DateTests: XCTestCase {
     func test_format_for_time () {
         
         let date = Date.distantPast
-        XCTAssertEqual(date.formatForTime(includePeriod: true), "11:58 PM")
-        XCTAssertEqual(date.formatForTime(includePeriod: false), "23:58")
+        XCTAssertEqual(date.formatForTime(is12HourTime: true), "11:58 PM")
+        XCTAssertEqual(date.formatForTime(is12HourTime: false), "23:58")
         XCTAssertEqual(date.formatForTime(), "23:58")
     }
     
