@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C908D8223E1E2E400275D70 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C908D8123E1E2E400275D70 /* DateTests.swift */; };
+		3C908D8423E1E54A00275D70 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C908D8323E1E54A00275D70 /* ArrayTests.swift */; };
+		3C908D8623E1E88500275D70 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C908D8523E1E88500275D70 /* StringTests.swift */; };
+		3C908D8A23E1F0E200275D70 /* FileStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C908D8923E1F0E200275D70 /* FileStorageTests.swift */; };
 		A5177848202303AC002498B3 /* NSUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A517783E202303AB002498B3 /* NSUtils.framework */; };
-		A517784D202303AC002498B3 /* NSUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A517784C202303AC002498B3 /* NSUtilsTests.swift */; };
 		A517784F202303AC002498B3 /* NSUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A5177841202303AB002498B3 /* NSUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A517785B2023044C002498B3 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A517785A2023044C002498B3 /* InsetTextField.swift */; };
 		A517785D202304D1002498B3 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A517785C202304D1002498B3 /* ProgressBarView.swift */; };
@@ -36,11 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C908D8123E1E2E400275D70 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
+		3C908D8323E1E54A00275D70 /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
+		3C908D8523E1E88500275D70 /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		3C908D8923E1F0E200275D70 /* FileStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorageTests.swift; sourceTree = "<group>"; };
 		A517783E202303AB002498B3 /* NSUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5177841202303AB002498B3 /* NSUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSUtils.h; sourceTree = "<group>"; };
 		A5177842202303AB002498B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5177847202303AC002498B3 /* NSUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A517784C202303AC002498B3 /* NSUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSUtilsTests.swift; sourceTree = "<group>"; };
 		A517784E202303AC002498B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A517785A2023044C002498B3 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		A517785C202304D1002498B3 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
@@ -107,8 +113,11 @@
 		A517784B202303AC002498B3 /* NSUtilsTests */ = {
 			isa = PBXGroup;
 			children = (
-				A517784C202303AC002498B3 /* NSUtilsTests.swift */,
 				A517784E202303AC002498B3 /* Info.plist */,
+				3C908D8323E1E54A00275D70 /* ArrayTests.swift */,
+				3C908D8523E1E88500275D70 /* StringTests.swift */,
+				3C908D8923E1F0E200275D70 /* FileStorageTests.swift */,
+				3C908D8123E1E2E400275D70 /* DateTests.swift */,
 			);
 			path = NSUtilsTests;
 			sourceTree = "<group>";
@@ -224,8 +233,8 @@
 					};
 					A5177846202303AC002498B3 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1010;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 1120;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -290,7 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A517784D202303AC002498B3 /* NSUtilsTests.swift in Sources */,
+				3C908D8223E1E2E400275D70 /* DateTests.swift in Sources */,
+				3C908D8A23E1F0E200275D70 /* FileStorageTests.swift in Sources */,
+				3C908D8623E1E88500275D70 /* StringTests.swift in Sources */,
+				3C908D8423E1E54A00275D70 /* ArrayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,13 +443,13 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4JHJ67RZB8;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NSUtils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.netsells.NSUtils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -454,13 +466,13 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 4JHJ67RZB8;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NSUtils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.netsells.NSUtils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -473,12 +485,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4JHJ67RZB8;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NSUtilsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.netsells.NSUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -488,12 +504,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4JHJ67RZB8;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NSUtilsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.netsells.NSUtilsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -51,6 +51,24 @@ extension UIView {
             self.widthAnchor.constraint(equalToConstant: size.height).isActive = true
         }
     }
+    
+    
+    /// Anchors view to be the same as it's superview. Remember to add the view to the superview first
+    func fitToSuperview () {
+        
+        guard let superview = superview else {
+            print("Error >> View must be added to superview first.")
+            return
+        }
+        
+        translatesAutoresizingMaskIntoConstraints = false
+        
+        topAnchor.constraint(equalTo: superview.topAnchor).isActive = true
+        bottomAnchor.constraint(equalTo: superview.bottomAnchor).isActive = true
+        widthAnchor.constraint(equalTo: superview.widthAnchor).isActive = true
+        centerXAnchor.constraint(equalTo: superview.centerXAnchor).isActive = true
+        setNeedsLayout()
+    }
 
     /// Helper method to deactivate constraints passed in.
     ///
@@ -73,5 +91,6 @@ extension UIView {
 
     func addCornerRadius(radius: CGFloat) {
         self.layer.cornerRadius = radius
+        self.layer.masksToBounds = true
     }
 }

@@ -17,7 +17,6 @@ import UIKit
 /// - Returns: returns a resized image for use.
 func resizeImage(image: UIImage, for size: CGSize) -> UIImage? {
 
-
     let render = UIGraphicsImageRenderer(size: size)
     return render.image(actions: { (context) in
         image.draw(in: CGRect(origin: .zero, size: size))
@@ -32,10 +31,11 @@ extension UIImageView {
     ///   - url: URL for the required image
     ///   - mode: Content mode for the final downloaded image
     public func downloadedFrom(url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
-        contentMode = mode
+        
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard
-                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
+                let httpURLResponse = response as? HTTPURLResponse,
+                200...399 ~= httpURLResponse.statusCode,
                 let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
                 let data = data, error == nil,
                 let image = UIImage(data: data)
@@ -43,11 +43,12 @@ extension UIImageView {
                     print("Error setting image - \(url)")
                     return
             }
-
-            DispatchQueue.main.async() { () -> Void in
+            
+            DispatchQueue.main.async() {
                 self.image = image
+                self.contentMode = mode
             }
-            }.resume()
+        }.resume()
     }
 
     /// Convience helper to download image and resize from a specified url

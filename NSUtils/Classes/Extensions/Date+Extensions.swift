@@ -11,11 +11,11 @@ import Foundation
 extension Date {
     // I'm not sure period is the correct term for AM or PM but thats what StackOverflow says ...
     // https://stackoverflow.com/questions/1468857/what-is-am-pm-called
-    public func formatForTime(includePeriod: Bool) -> String {
+    public func formatForTime(includePeriod: Bool = false) -> String {
         let dateFormatter = NSUtilsDateFormatter()
 
         if(includePeriod) {
-            dateFormatter.dateFormat = "HH:mm a"
+            dateFormatter.dateFormat = "hh:mm a"
         } else {
             dateFormatter.dateFormat = "HH:mm"
         }
