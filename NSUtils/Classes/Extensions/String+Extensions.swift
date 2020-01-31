@@ -20,14 +20,12 @@ extension String {
         }
     }
 
-    public func fromBase64() -> String
-    {
-        let data = Data(base64Encoded: self, options: NSData.Base64DecodingOptions(rawValue: 0))
-        return String(data: data!, encoding: String.Encoding.utf8)!
+    public var base64Decoded: String? {
+        guard let data = Data(base64Encoded: self, options: NSData.Base64DecodingOptions(rawValue: 0)) else { return nil }
+        return String(data: data, encoding: String.Encoding.utf8)
     }
 
-    public func toBase64() -> String
-    {
+    public var base64Encoded: String {
         let data = self.data(using: String.Encoding.utf8)
         return data!.base64EncodedString(options: NSData.Base64EncodingOptions(rawValue: 0))
     }

@@ -11,14 +11,23 @@ import Foundation
 public protocol Presentable {}
 
 extension UIViewController {
+    
     public func showSystemAlert(title: String, message: String, defaultActionTitle: String = "OK") {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
 
-        let okAction = UIAlertAction(title: defaultActionTitle, style: UIAlertAction.Style.default) { (result : UIAlertAction) -> Void in
-        }
+        alertController.addAction(UIAlertAction(title: defaultActionTitle, style: .default))
 
-        alertController.addAction(okAction)
-
-        self.present(alertController, animated: true, completion: nil)
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    public func showConfirmation(title: String, message: String?, actionTitle: String = "OK", cancelTitle: String = "Cancel", confirmed: @escaping ((UIAlertAction) -> Void)) {
+        
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        alertController.addAction(UIAlertAction(title: actionTitle, style: .default, handler: confirmed))
+        alertController.addAction(UIAlertAction(title: cancelTitle, style: .cancel))
+        
+        present(alertController, animated: true, completion: nil)
     }
 }
