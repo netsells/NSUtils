@@ -1,5 +1,7 @@
 # NSUtils
 
+Created and maintained by the [Netsells team](https://netsells.co.uk/)
+
 
 ## Example
 
